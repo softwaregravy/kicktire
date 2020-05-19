@@ -81,5 +81,6 @@ test:
 production:
   <<: *default
   database: kicktire_production
-  username: kicktire
+  username: postgres 
   password: <%= ENV['KICKTIRE_DATABASE_PASSWORD'] %>
+  host: "/cloudsql/kicktire-development"
